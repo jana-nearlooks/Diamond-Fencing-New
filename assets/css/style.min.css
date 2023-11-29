@@ -5666,3 +5666,21 @@ background:#272727;
 	font-size: 15px;
 	line-height: 4vh;
 }
+.quote-btn{
+	padding: 6px;
+	background:linear-gradient(to top, #B58E41 , #F5E7A3);
+	font-weight: bolder;
+	border-radius: 6px;
+	box-shadow: 1px 1px 4px 0;
+	margin-left: 5%;
+
+
+	
+	
+}
+
+@media only screen and (max-device-width: 480px) {
+   .quote-btn{
+	background-color: #0094DE;
+   }
+}

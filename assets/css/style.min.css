@@ -5684,3 +5684,7 @@ background:#272727;
 	background-color: #0094DE;
    }
 }
+.top-bar-info p{
+	color: #994279;
+	font-weight: bolder;
+}

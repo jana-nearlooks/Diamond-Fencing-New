@@ -5684,7 +5684,8 @@ background:#272727;
 	background-color: #0094DE;
    }
 }
-.top-bar-info p{
-	color: #994279;
-	font-weight: bolder;
+.top-info p {
+    color: #09752F !important;
+    font-weight: bold !important;
+    /* Add any other styles you want to apply */
 }

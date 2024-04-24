@@ -5689,3 +5689,31 @@ background:#272727;
     font-weight: bold !important;
     /* Add any other styles you want to apply */
 }
+.disabled {
+	pointer-events: none;
+	
+  }
+  /* .button{
+	background-color: #0094DE;
+	width:100px;
+	height:50px;
+	border-radius: 8px;
+  } */
+  /* .button {
+	background-color: #0094de;
+	
+	padding: 8px;
+	border-radius: 8px;
+	font-weight: bold;
+
+} */
+#b{
+	background: #0094DE;
+	width:120px;
+	height:50px;
+	border-radius: 8px;
+}
+/* #b:enabled{
+	color:white;
+} */
+/* Style for disabled button */

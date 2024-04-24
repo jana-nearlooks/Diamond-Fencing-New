@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Diamond Fencing">
-    <meta name="description" content="Diamond Fencing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content=
-    "Affordable chain link fencing options,
-    Automated barbed wire production,
-    Secure fencing solutions Cumbum">
-
-    <title>Contact</title>
-
+    "Best Fencing Industry in tamilnadu, 
+    Best Fencing industry in Dindigul, 
+    Best Fencing in theni, Diamond Fencing, 
+    Best Fencing Industry, Dindigul Fencing Solutions, 
+    Theni Diamond Fence Installation, 
+    High-Quality Fencing Services, 
+    Custom Diamond Fences, 
+    Durable Fencing Materials, 
+    Expert Fence Installation, 
+    Fencing Industry in tamilnadu, 
+    Theni Security Fencing, 
+    Affordable Fencing">
+    <meta name="description" content="Connect with Diamond Fencing Industry, your source for custom diamond fences and expert installation services in Dindigul and Theni.">
+    <title>Diamond Fencing - Contact</title>
     <!-- Apple Favicon -->
     <link rel="apple-touch-icon" href="assets/img/logo/diamond fencing logo.png">
-
     <!-- All Device Favicon -->
     <link rel="icon" href="assets/img/logo/diamond fencing logo.png">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
     <!-- All Icons -->
     <link rel="stylesheet" href="assets/all-icons/myicon.css">
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
     <!-- Plugin -->
     <link rel="stylesheet" href="assets/css/plugins.min.css">
-
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.min.css">
-
     <!-- Responsive -->
     <link rel="stylesheet" href="assets/css/responsive.min.css">
 
@@ -221,23 +218,27 @@
                         <h2>Get Touch With Us </h2>
                         <p>Feel free to reach out to us with any questions or inquiries. We are here to help you with your fencing needs.</p>
                     </div>
-                    <form action="" method="POST" class="message-form v3">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="message-form v3">
                         <div class="group-box">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="hidden" name="access_key" value="a06fdd57-1763-4b23-91b7-d78456d2af1f">
+                            <input type="text" name="name" placeholder="Your Name" id="name">
+                            <input type="tel" name="phone" placeholder="Your Phone Number" id="phone">
+                            <input type="email" name="email" placeholder="Your Email" id="email">
                             
-                            <select>
+                            <!-- <select id="subject">
                                 <option selected="">Subject</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
-                            </select>
+                            </select> -->
                         </div>
                         
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button type="submit" class="btn-anime v1 submit-btn">submit now</button>
-                        <p class="response"></p>
-                    </form>
+                        <textarea name="message" placeholder="Message" class="mb-5" id="message"></textarea>
+                         <button type="submit"   id="b" disabled>submit now</button> 
+                        <!-- <a class="disabled" onMouseOver="this.style.color='white'" type= "submit" id="btn" style="background-color: #0094de; padding: 8px;border-radius: 8px; font-weight: bolder;" disabled>Submit Now</a> -->
+                        <!-- <p class="response"></p> -->
+                        <!-- <button class="button" onMouseOver="this.style.color='white'">Submit Now</button> -->
+                    </form> 
                 </div>
             </section>
             <!-- Contact Us End -->
@@ -391,6 +392,41 @@
         </footer>
     </div>
 
+    <script>
+      var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        var phoneInput = document.getElementById("phone");
+        var messageInput = document.getElementById("message");
+        var submitButton = document.getElementById("b");
+
+        function validateForm() {
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var phonePattern = /^\d{10}$/;
+
+            var nameValid = nameInput.value.trim() !== "";
+            var emailValid = emailInput.value.trim() !== "" && emailPattern.test(emailInput.value.trim());
+            var phoneValid = phoneInput.value.trim() !== "" && phonePattern.test(phoneInput.value.trim());
+            var messageValid = messageInput.value.trim() !== "";
+
+            if (nameValid && emailValid && phoneValid && messageValid) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        nameInput.addEventListener("input", validateForm);
+        emailInput.addEventListener("input", validateForm);
+        phoneInput.addEventListener("input", validateForm);
+        messageInput.addEventListener("input", validateForm);
+    
+    </script>
+       
+        
+
+    
+    
+    
     <!-- jQuery -->
     <script src="assets/js/jquery-3.7.0.min.js"></script>
 
